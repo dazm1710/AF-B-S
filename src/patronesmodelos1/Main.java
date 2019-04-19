@@ -5,10 +5,9 @@
  */
 package patronesmodelos1;
 
-import ProductosAbstractos.CambMontaña;
-import ProductosAbstractos.CambRuta;
-import FabricasAbstractas.FabricaCambios;
-import FabricasConcretas.FabricaCamb;
+import ProductosAbstractos.*;
+import FabricasAbstractas.*;
+import FabricasConcretas.*;
 
 /**
  *
@@ -22,14 +21,14 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         //Llamar Builder
-        FabricaCambios fabrica;
-        CambMontaña cambiosMontaña;
-        CambRuta cambiosRuta;
-        fabrica = new FabricaCamb();
-        cambiosMontaña =  fabrica.crearCambioMontaña();
-        cambiosRuta = fabrica.crearCambioRuta();
-        System.out.println(cambiosMontaña);
-        System.out.println(cambiosRuta);
+        FabricaCuadro fabrica;
+        CuadMontaña cuadrosMontaña;
+        CuadRuta cuadroRuta;
+        fabrica = new FabricaCuad();
+        cuadrosMontaña =  fabrica.crearCuadroMontaña();
+        cuadroRuta = fabrica.crearCuadroRuta();
+        System.out.println(cuadrosMontaña);
+        System.out.println(cuadroRuta);
     }
     
 }
