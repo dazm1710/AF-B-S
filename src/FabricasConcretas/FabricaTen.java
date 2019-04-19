@@ -5,6 +5,8 @@
  */
 package FabricasConcretas;
 
+import Concretos.TenedorMontaña;
+import Concretos.TenedorRuta;
 import FabricasAbstractas.FabricaTenedor;
 import ProductosAbstractos.TenMontaña;
 import ProductosAbstractos.TenRuta;
@@ -17,12 +19,12 @@ public class FabricaTen implements FabricaTenedor{
 
     @Override
     public TenMontaña crearTenedorMontaña() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new TenedorMontaña();
     }
 
     @Override
     public TenRuta crearTenedorRuta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new TenedorRuta();
     }
    
 }

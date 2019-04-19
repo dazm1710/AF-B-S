@@ -5,6 +5,8 @@
  */
 package FabricasConcretas;
 
+import Concretos.LlantasMontaña;
+import Concretos.LlantasRuta;
 import FabricasAbstractas.FabricaLlantas;
 import ProductosAbstractos.LlanMontaña;
 import ProductosAbstractos.LlanRuta;
@@ -18,12 +20,12 @@ public class FabricaLlan implements FabricaLlantas {
 
     @Override
     public LlanMontaña crearLlantaMontaña() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new LlantasMontaña();
     }
 
     @Override
     public LlanRuta crearLlantaRuta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new LlantasRuta();
     }
     
 }

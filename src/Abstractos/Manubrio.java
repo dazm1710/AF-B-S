@@ -11,4 +11,7 @@ package Abstractos;
  */
 public abstract class Manubrio {
     public abstract String nombre();
+    public String toString(){
+        return nombre();
+    }
 }

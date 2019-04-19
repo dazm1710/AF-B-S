@@ -5,6 +5,8 @@
  */
 package FabricasConcretas;
 
+import Concretos.SillinMontaña;
+import Concretos.SillinRuta;
 import FabricasAbstractas.FabricaSillin;
 import ProductosAbstractos.SilMontaña;
 import ProductosAbstractos.SilRuta;
@@ -17,12 +19,12 @@ public class FabricaSil implements FabricaSillin {
 
     @Override
     public SilMontaña crearSillinMontaña() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new SillinMontaña();
     }
 
     @Override
     public SilRuta crearSillinRuta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new SillinRuta();
     }
     
 }

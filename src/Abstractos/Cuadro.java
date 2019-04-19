@@ -11,4 +11,7 @@ package Abstractos;
  */
 public abstract class Cuadro {
     public abstract String nombre();
+    public String toString(){
+        return nombre();
+    }
 }

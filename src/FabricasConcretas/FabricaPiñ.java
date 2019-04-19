@@ -5,6 +5,8 @@
  */
 package FabricasConcretas;
 
+import Concretos.PiñonesMontaña;
+import Concretos.PiñonesRuta;
 import FabricasAbstractas.FabricaPiñones;
 import ProductosAbstractos.PiñMontaña;
 import ProductosAbstractos.PiñRuta;
@@ -17,12 +19,12 @@ public class FabricaPiñ implements FabricaPiñones {
 
     @Override
     public PiñMontaña crearPiñonesMontaña() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new PiñonesMontaña();
     }
 
     @Override
     public PiñRuta crearPiñonesRuta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new PiñonesRuta();
     }
     
 }

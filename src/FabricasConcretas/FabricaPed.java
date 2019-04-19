@@ -5,6 +5,8 @@
  */
 package FabricasConcretas;
 
+import Concretos.PedalesMontaña;
+import Concretos.PedalesRuta;
 import FabricasAbstractas.FabricaPedales;
 import ProductosAbstractos.PedMontaña;
 import ProductosAbstractos.PedRuta;
@@ -17,12 +19,12 @@ public class FabricaPed implements FabricaPedales {
 
     @Override
     public PedMontaña crearPedalesMontaña() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new PedalesMontaña();
     }
 
     @Override
     public PedRuta crearPedalesRuta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new PedalesRuta();
     }
     
 }

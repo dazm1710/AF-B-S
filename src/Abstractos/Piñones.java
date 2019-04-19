@@ -11,4 +11,7 @@ package Abstractos;
  */
 public abstract class Piñones {
     public abstract String nombre();
+    public String toString(){
+        return nombre();
+    }
 }

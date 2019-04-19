@@ -12,4 +12,8 @@ package Abstractos;
 public abstract class Cambios {
     //Direccion de la 
     public abstract String nombre();
+    
+    public String toString(){
+        return nombre();
+    }
 }

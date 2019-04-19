@@ -5,6 +5,8 @@
  */
 package FabricasConcretas;
 
+import Concretos.ManubrioMontaña;
+import Concretos.ManubrioRuta;
 import FabricasAbstractas.FabricaManubrios;
 import ProductosAbstractos.ManMontaña;
 import ProductosAbstractos.ManRuta;
@@ -17,12 +19,12 @@ public class FabricaMan implements FabricaManubrios {
 
     @Override
     public ManMontaña crearManubriosMontaña() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new ManubrioMontaña();
     }
 
     @Override
     public ManRuta crearManubriosRuta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new ManubrioRuta();
     }
     
 }

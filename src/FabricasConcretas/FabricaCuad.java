@@ -5,6 +5,8 @@
  */
 package FabricasConcretas;
 
+import Concretos.CuadroMontaña;
+import Concretos.CuadroRuta;
 import FabricasAbstractas.FabricaCuadro;
 import ProductosAbstractos.CuadMontaña;
 import ProductosAbstractos.CuadRuta;
@@ -17,12 +19,12 @@ public class FabricaCuad implements FabricaCuadro {
 
     @Override
     public CuadMontaña crearCuadroMontaña() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new CuadroMontaña();
     }
 
     @Override
     public CuadRuta crearCuadroRuta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new CuadroRuta();
     }
     
 }

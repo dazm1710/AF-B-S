@@ -5,6 +5,8 @@
  */
 package FabricasConcretas;
 
+import Concretos.FrenosMontaña;
+import Concretos.FrenosRuta;
 import FabricasAbstractas.FabricaFrenos;
 import ProductosAbstractos.FreMontaña;
 import ProductosAbstractos.FreRuta;
@@ -19,12 +21,12 @@ public class FabricaFre implements FabricaFrenos {
 
     @Override
     public FreMontaña crearFrenoMontaña() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new FrenosMontaña();
     }
 
     @Override
     public FreRuta crearFrenoRuta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new FrenosRuta();
     }
     
 }
