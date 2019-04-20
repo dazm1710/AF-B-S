@@ -36,7 +36,7 @@ public class VentanaInicial extends JFrame {
             setContentPane(new JLabel((Icon) new ImageIcon(ImageIO.read(new File("./src/imagenes/fondo.jpg")))));
         } catch (IOException e) {            e.printStackTrace();        }
         add(datos);
-        
+        this.setUndecorated(true);
         this.setMinimumSize(d);
         this.setExtendedState(MAXIMIZED_BOTH);
         this.setResizable(false);

@@ -47,12 +47,10 @@ public class ControladorVistas {
             String command=ae.getActionCommand();
             
             if("montana".equals(command)){
-                JOptionPane.showMessageDialog(vista, "Modelo de Bicicleta de montaña, así puede quedar tu bici de montaña");
-                System.out.println("Montaña presionado");
+                JOptionPane.showMessageDialog(vista, "Así se ve una Bicicleta de Ruta");
             }
             if("ruta".equals(command)){
-                JOptionPane.showMessageDialog(vista, "Modelo de Bicicleta de ruta, así puede quedar tu bici de ruta");
-                System.out.println("Ruta presionado");
+                JOptionPane.showMessageDialog(vista, "Así se ve una Bicicleta de Montaña");
             }
             if("start".equals(command)){
                 System.out.println("Inicia");

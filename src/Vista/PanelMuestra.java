@@ -8,29 +8,25 @@ package Vista;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import javafx.scene.layout.Border;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 /**
  *
  * @author Alejandro
  */
 public class PanelMuestra extends JPanel{
-    private JButton btnMontana, btnRuta, btnStart;
-    private JLabel titulo1,subtitulo1,subtitulo2;
-    private Dimension d;
-    private String rutaImagen, montanaImagen;
-    private Icon icono,icono2;
+    private final JButton btnMontana, btnRuta, btnStart;
+    private final JLabel titulo1,subtitulo1,subtitulo2;
+    private final Dimension d;
+    private final String rutaImagen, montanaImagen;
+    private final Icon icono,icono2;
     public PanelMuestra(){
         d=Toolkit.getDefaultToolkit().getScreenSize();
         setLayout(null);
@@ -39,8 +35,8 @@ public class PanelMuestra extends JPanel{
         ImageIcon imagen = new ImageIcon(rutaImagen);
         icono = new ImageIcon(imagen.getImage().getScaledInstance(d.width/4,d.height/2, Image.SCALE_DEFAULT));
         
-        rutaImagen="./src/imagenes/MontanaSin.png";
-        ImageIcon imagen2 = new ImageIcon(rutaImagen);
+        montanaImagen="./src/imagenes/MontanaSin.png";
+        ImageIcon imagen2 = new ImageIcon(montanaImagen);
         icono2 = new ImageIcon(imagen2.getImage().getScaledInstance(d.width/3,d.height/2, Image.SCALE_DEFAULT));
         
         btnMontana= new JButton(icono2);

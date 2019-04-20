@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/3PatronesModelos1/src/FabricasConcretas/FabricaCamb.java</file>
-            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/3PatronesModelos1/src/BuilderCicla/Bicicleta.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/3PatronesModelos1/src/Vista/PanelMuestra.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/3PatronesModelos1/src/Vista/VentanaInicial.java</file>
+            <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/3PatronesModelos1/src/Controladores/ControladorVistas.java</file>
             <file>file:/C:/Users/Alejandro/Documents/NetBeansProjects/3PatronesModelos1/src/patronesmodelos1/Main.java</file>
         </group>
     </open-files>
