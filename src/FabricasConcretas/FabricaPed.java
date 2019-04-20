@@ -16,7 +16,17 @@ import ProductosAbstractos.PedRuta;
  * @author Alejandro
  */
 public class FabricaPed implements FabricaPedales {
-
+    private static FabricaPed inst;
+    private FabricaPed(){
+        
+    }
+    
+    public static FabricaPed getInstancia(){
+        if(inst==null){
+           inst= new FabricaPed();
+        }
+       return inst;
+    }
     @Override
     public PedMontaña crearPedalesMontaña() {
         return new PedalesMontaña();

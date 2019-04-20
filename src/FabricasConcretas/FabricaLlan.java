@@ -17,7 +17,17 @@ import ProductosAbstractos.LlanRuta;
  * @author Alejandro
  */
 public class FabricaLlan implements FabricaLlantas {
-
+    private static FabricaLlan inst;
+    private FabricaLlan(){
+        
+    }
+    
+    public static FabricaLlan getInstancia(){
+        if(inst==null){
+           inst= new FabricaLlan();
+        }
+       return inst;
+    }
     @Override
     public LlanMontaña crearLlantaMontaña() {
         return new LlantasMontaña();

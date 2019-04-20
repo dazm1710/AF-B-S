@@ -16,7 +16,18 @@ import ProductosAbstractos.ManRuta;
  * @author Alejandro
  */
 public class FabricaMan implements FabricaManubrios {
-
+    
+    private static FabricaMan inst;
+    private FabricaMan(){
+        
+    }
+    
+    public static FabricaMan getInstancia(){
+        if(inst==null){
+           inst= new FabricaMan();
+        }
+       return inst;
+    }
     @Override
     public ManMontaña crearManubriosMontaña() {
         return new ManubrioMontaña();

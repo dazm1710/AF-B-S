@@ -16,12 +16,23 @@ import ProductosAbstractos.CambRuta;
  * @author Alejandro
  */
 public class FabricaCamb implements FabricaCambios {
-
+    private static FabricaCamb inst;
+    private FabricaCamb(){
+        
+    }
+    
+    public static FabricaCamb getInstancia(){
+        if(inst==null){
+           inst= new FabricaCamb();
+        }
+       return inst;
+    }
+    
     @Override
     public CambMontaña crearCambioMontaña() {
         return new CambiosMontaña();
     }
-
+    
     @Override
     public CambRuta crearCambioRuta() {
         return new CambiosRuta();

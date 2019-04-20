@@ -18,15 +18,15 @@ import ProductosAbstractos.*;
  * @author Alejandro
  */
 public class BicicletaUser extends BicicletaBuilder {
-    FabricaCamb cam = new FabricaCamb();
-    FabricaCuad cua = new FabricaCuad();
-    FabricaFre fre = new FabricaFre();
-    FabricaLlan llan = new FabricaLlan();
-    FabricaMan man = new FabricaMan();
-    FabricaPed ped = new FabricaPed();
-    FabricaPiñ piñ = new FabricaPiñ();
-    FabricaSil sil = new FabricaSil();
-    FabricaTen ten = new FabricaTen();
+    FabricaCamb cam = FabricaCamb.getInstancia();
+    FabricaCuad cua = FabricaCuad.getInstancia();
+    FabricaFre fre = FabricaFre.getInstancia();
+    FabricaLlan llan = FabricaLlan.getInstancia();
+    FabricaMan man = FabricaMan.getInstancia();
+    FabricaPed ped = FabricaPed.getInstancia();
+    FabricaPiñ piñ = FabricaPiñ.getInstancia();
+    FabricaSil sil = FabricaSil.getInstancia();
+    FabricaTen ten = FabricaTen.getInstancia();
     
     @Override
     public void DefinirBicicleta() {

@@ -17,6 +17,17 @@ import ProductosAbstractos.CuadRuta;
  */
 public class FabricaCuad implements FabricaCuadro {
 
+    private static FabricaCuad inst;
+    private FabricaCuad(){
+        
+    }
+    
+    public static FabricaCuad getInstancia(){
+        if(inst==null){
+           inst= new FabricaCuad();
+        }
+       return inst;
+    }
     @Override
     public CuadMontaña crearCuadroMontaña() {
         return new CuadroMontaña();

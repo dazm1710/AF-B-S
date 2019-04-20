@@ -16,7 +16,17 @@ import ProductosAbstractos.TenRuta;
  * @author Alejandro
  */
 public class FabricaTen implements FabricaTenedor{
-
+    //Singleton
+    private static FabricaTen inst;
+    private FabricaTen(){    }
+    
+    public static FabricaTen getInstancia(){
+        if(inst==null){
+           inst= new FabricaTen();
+        }
+       return inst;
+    }
+    //Fin Singleton
     @Override
     public TenMontaña crearTenedorMontaña() {
         return new TenedorMontaña();

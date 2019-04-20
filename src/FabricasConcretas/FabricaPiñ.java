@@ -16,7 +16,18 @@ import ProductosAbstractos.PiñRuta;
  * @author Alejandro
  */
 public class FabricaPiñ implements FabricaPiñones {
-
+    
+    private static FabricaPiñ inst;
+    private FabricaPiñ(){
+        
+    }
+    
+    public static FabricaPiñ getInstancia(){
+        if(inst==null){
+           inst= new FabricaPiñ();
+        }
+       return inst;
+    }
     @Override
     public PiñMontaña crearPiñonesMontaña() {
         return new PiñonesMontaña();

@@ -18,7 +18,18 @@ import ProductosAbstractos.FreRuta;
  * @author Alejandro
  */
 public class FabricaFre implements FabricaFrenos {
-
+    private static FabricaFre inst;
+    private FabricaFre(){
+        
+    }
+    
+    public static FabricaFre getInstancia(){
+        if(inst==null){
+           inst= new FabricaFre();
+        }
+       return inst;
+    }
+    
     @Override
     public FreMontaña crearFrenoMontaña() {
         return new FrenosMontaña();
