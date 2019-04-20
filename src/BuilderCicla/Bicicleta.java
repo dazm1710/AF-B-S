@@ -21,11 +21,15 @@ public class Bicicleta {
     public Sillin sillin;
     public Tenedor tenedor;
     
+    public Bicicleta(){}
+    
     public String armado(){
         String ar;
-        ar = cambio.nombre()+" "+cuadro.nombre()+" "+freno.nombre()+" "+llanta.nombre()
-                +" "+manubrio.nombre()+" "+pedal.nombre()+" "+piñones.nombre()
-                +" "+sillin.nombre()+" "+tenedor.nombre();
+        //ar="se supone que si la crea";
+        ar = cambio.nombre()+" \n"+cuadro.nombre()+" \n"+freno.nombre()+" \n"+llanta.nombre()
+                +" \n"+manubrio.nombre()+" \n"+pedal.nombre()+" \n"+piñones.nombre()
+                +" \n"+sillin.nombre()+" \n"+tenedor.nombre();
+                
         return ar;
     }
 }

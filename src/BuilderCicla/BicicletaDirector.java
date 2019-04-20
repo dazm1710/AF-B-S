@@ -13,11 +13,13 @@ import BuilderAbstract.BicicletaBuilder;
  */
 public class BicicletaDirector {
     private BicicletaBuilder builder;
-    public BicicletaDirector(BicicletaBuilder entra){
-        this.builder=entra;
+    
+    public BicicletaDirector(BicicletaBuilder builder){
+        this.builder=builder;
     }
+    
     public void ConstruirBicicleta() throws Exception{
-        
+        builder.DefinirBicicleta();
         builder.montarCambios();
         builder.montarCuadro();
         builder.montarFrenos();

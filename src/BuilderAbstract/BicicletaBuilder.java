@@ -13,10 +13,11 @@ import BuilderCicla.Bicicleta;
  */
 public abstract class BicicletaBuilder {
     protected Bicicleta b;
+    
     public Bicicleta getBici(){
         return b;
     }
-    
+    public abstract void DefinirBicicleta();
     public abstract void montarCambios();
     public abstract void montarCuadro();
     public abstract void montarFrenos();
