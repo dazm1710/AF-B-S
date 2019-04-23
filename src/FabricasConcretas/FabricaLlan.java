@@ -5,8 +5,8 @@
  */
 package FabricasConcretas;
 
-import Concretos.LlantasMontaña;
-import Concretos.LlantasRuta;
+import ProductosConcretos.LlantasMontaña;
+import ProductosConcretos.LlantasRuta;
 import FabricasAbstractas.FabricaLlantas;
 import ProductosAbstractos.LlanMontaña;
 import ProductosAbstractos.LlanRuta;

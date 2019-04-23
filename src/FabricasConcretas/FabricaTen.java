@@ -5,8 +5,8 @@
  */
 package FabricasConcretas;
 
-import Concretos.TenedorMontaña;
-import Concretos.TenedorRuta;
+import ProductosConcretos.TenedorMontaña;
+import ProductosConcretos.TenedorRuta;
 import FabricasAbstractas.FabricaTenedor;
 import ProductosAbstractos.TenMontaña;
 import ProductosAbstractos.TenRuta;

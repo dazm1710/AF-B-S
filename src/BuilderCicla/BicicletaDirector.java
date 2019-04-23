@@ -5,7 +5,7 @@
  */
 package BuilderCicla;
 
-import BuilderAbstract.BicicletaBuilder;
+import Abstractos.BicicletaBuilder;
 
 /**
  *
@@ -20,13 +20,9 @@ public class BicicletaDirector {
     
     public void ConstruirBicicleta() throws Exception{
         builder.DefinirBicicleta();
-        builder.montarCambios();
         builder.montarCuadro();
-        builder.montarFrenos();
         builder.montarLlantas();
         builder.montarManubrio();
-        builder.montarPedales();
-        builder.montarPiñones();
         builder.montarSillin();
         builder.montarTenedor();
     }

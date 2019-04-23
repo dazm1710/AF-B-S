@@ -5,8 +5,8 @@
  */
 package FabricasConcretas;
 
-import Concretos.SillinMontaña;
-import Concretos.SillinRuta;
+import ProductosConcretos.SillinMontaña;
+import ProductosConcretos.SillinRuta;
 import FabricasAbstractas.FabricaSillin;
 import ProductosAbstractos.SilMontaña;
 import ProductosAbstractos.SilRuta;
